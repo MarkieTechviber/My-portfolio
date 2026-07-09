@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ─── Meta ─── -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mark Joshua Baluran — Video Editor & IT Student. Portfolio featuring video editing, IT support, and creative content." />
+  <meta name="keywords" content="Video Editor, IT Student, Portfolio, Mark Joshua Baluran, Premiere Pro, After Effects" />
+  <meta name="author" content="Mark Joshua Baluran" />
+  <title>Mark Joshua Baluran — Video Editor & IT Student</title>
+
+  <!-- ─── Fonts (Cinzel + Inter) ─── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ─── Font Awesome 6 Icons ─── -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- ─── Stylesheet ─── -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       GRAIN TEXTURE OVERLAY
+  ═══════════════════════════════════════════ -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM TARGET RETICLE CURSOR
+  ═══════════════════════════════════════════ -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <!-- SVG Wings of Freedom Badge (Shield + Wings) -->
+        <svg viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 C18 2 21 4 22 10 C22 20 18 25 12 27 C6 25 2 20 2 10 C3 4 6 2 12 2 Z" />
+          <path d="M11 8 C8 9 6 11 6 14 C6 17 8 19 10 21 M11 11 C9 12 8 13 8 15 C8 17 9 18 11 19 M11 14 C10 15 9 16 9 17 C9 18 10 18 11 18" />
+          <path d="M13 8 C16 9 18 11 18 14 C18 17 16 19 14 21 M13 11 C15 12 16 13 16 15 C16 17 15 18 13 19 M13 14 C14 15 15 16 15 17 C15 18 14 18 13 18" fill="currentColor" />
+        </svg>
+        <span>MARK JOSHUA</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Hero Text Column -->
+        <div class="hero-text">
+          <p class="hero-greeting reveal">Portfolio</p>
+          <h1 class="hero-name reveal">
+            <span>Mark Joshua</span>
+            <span>Baluran</span>
+          </h1>
+          <p class="hero-title reveal">Video Editor & IT Student</p>
+          <p class="hero-desc reveal">
+            Passionate video editor and IT student with hands-on experience creating engaging, 
+            high-quality content for various platforms. Specializes in short-form reels, AI-generated 
+            videos, school promotional content, vlogs, and video presentations.
+          </p>
+          <div class="hero-buttons reveal">
+            <a href="#contact" class="btn btn-solid">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="assets/Mark_Joshua_Baluran_Resume.pdf" download class="btn btn-outline">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Image Column -->
+        <div class="hero-image reveal-right">
+          <div class="hero-image-frame reveal-image">
+            <img src="assets/profile.png" alt="Mark Joshua Baluran — Video Editor & IT Student" />
+          </div>
+
+          <!-- Decorative SVG/HTML Background Elements -->
+          <div class="hero-decorations" aria-hidden="true">
+            <div class="deco-circle"></div>
+            <!-- Dot Grid -->
+            <svg class="deco-dots" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="4" cy="4" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="24" cy="4" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="44" cy="4" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="64" cy="4" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="4" cy="24" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="24" cy="24" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="44" cy="24" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="64" cy="24" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="4" cy="44" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="24" cy="44" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="44" cy="44" r="2" fill="#8C6E41" opacity="0.4"/>
+              <circle cx="64" cy="44" r="2" fill="#8C6E41" opacity="0.4"/>
+            </svg>
+            <!-- Plus Symbol -->
+            <div class="deco-plus">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="0" x2="10" y2="20" stroke="#8C6E41" stroke-width="1.5"/>
+                <line x1="0" y1="10" x2="20" y2="10" stroke="#8C6E41" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE STRIP #1
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Video Editor</span>
+        <span class="marquee-divider">✦</span>
+        <span>Creative Content</span>
+        <span class="marquee-divider">✦</span>
+        <span>IT Student</span>
+        <span class="marquee-divider">✦</span>
+        <span>Short-Form Reels</span>
+        <span class="marquee-divider">✦</span>
+        <span>AI-Generated Video</span>
+        <span class="marquee-divider">✦</span>
+      </div>
+      <div class="marquee-content">
+        <span>Video Editor</span>
+        <span class="marquee-divider">✦</span>
+        <span>Creative Content</span>
+        <span class="marquee-divider">✦</span>
+        <span>IT Student</span>
+        <span class="marquee-divider">✦</span>
+        <span>Short-Form Reels</span>
+        <span class="marquee-divider">✦</span>
+        <span>AI-Generated Video</span>
+        <span class="marquee-divider">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number reveal" aria-hidden="true">01</span>
+        <p class="section-label reveal">Biography</p>
+        <h2 class="section-title reveal">About Me</h2>
+      </div>
+      <div class="about-grid">
+
+        <!-- Bio Text -->
+        <div class="about-text reveal-left">
+          <p>
+            I'm a passionate <strong>Video Editor</strong> and <strong>IT Student</strong> with 
+            hands-on experience creating engaging, high-quality content for various platforms. 
+            I specialize in short-form reels, AI-generated videos, school promotional content, 
+            vlogs, and video presentations.
+          </p>
+          <p>
+            Proficient in industry-standard tools including Adobe Premiere Pro, After Effects, Photoshop, 
+            Lightroom, CapCut, and Canva. On the IT side, I'm skilled in computer hardware troubleshooting, 
+            OS installation, basic web development (HTML/CSS), network fundamentals, and tools like VS Code, 
+            GitHub, Figma, and Microsoft Office Suite. I bring creativity, technical knowledge, and strong 
+            attention to detail to every project I take on.
+          </p>
+          <div class="languages">
+            <span class="lang-pill"><i class="fa-solid fa-flag"></i> Filipino — Native</span>
+            <span class="lang-pill"><i class="fa-solid fa-earth-americas"></i> English — Conversational</span>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="about-stats reveal-right">
+          <div class="stat-item stagger-1 reveal">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item stagger-2 reveal">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">Completed Videos</div>
+          </div>
+          <div class="stat-item stagger-3 reveal">
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Software Tools</div>
+          </div>
+          <div class="stat-item stagger-4 reveal">
+            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number reveal" aria-hidden="true">02</span>
+        <p class="section-label reveal">Professional Stack</p>
+        <h2 class="section-title reveal">Skills & Tools</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Video & Design -->
+        <div class="skill-card reveal stagger-1">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-film"></i></div>
+            <h3 class="skill-card-title">Video & Design</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-item"><i class="fa-solid fa-clapperboard"></i> Premiere Pro</span>
+            <span class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i> After Effects</span>
+            <span class="skill-item"><i class="fa-solid fa-scissors"></i> CapCut</span>
+            <span class="skill-item"><i class="fa-solid fa-image"></i> Photoshop</span>
+            <span class="skill-item"><i class="fa-solid fa-camera"></i> Lightroom</span>
+            <span class="skill-item"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+
+        <!-- IT & Development -->
+        <div class="skill-card reveal stagger-2">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="skill-card-title">IT & Development</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-item"><i class="fa-solid fa-terminal"></i> VS Code</span>
+            <span class="skill-item"><i class="fa-brands fa-github"></i> GitHub / Git</span>
+            <span class="skill-item"><i class="fa-brands fa-figma"></i> Figma (UI/UX)</span>
+            <span class="skill-item"><i class="fa-solid fa-file-word"></i> Microsoft Office</span>
+            <span class="skill-item"><i class="fa-solid fa-video"></i> OBS Studio</span>
+            <span class="skill-item"><i class="fa-solid fa-robot"></i> ChatGPT / Claude / AI</span>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="skill-card reveal stagger-3">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3 class="skill-card-title">Technical Skills</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-item"><i class="fa-solid fa-microchip"></i> Hardware Troubleshooting</span>
+            <span class="skill-item"><i class="fa-solid fa-desktop"></i> OS Installation & Config</span>
+            <span class="skill-item"><i class="fa-solid fa-network-wired"></i> Network Fundamentals</span>
+            <span class="skill-item"><i class="fa-brands fa-html5"></i> HTML / CSS</span>
+            <span class="skill-item"><i class="fa-brands fa-python"></i> Python Programming</span>
+            <span class="skill-item"><i class="fa-solid fa-database"></i> Data Entry & Docs</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card reveal stagger-4">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fa-solid fa-user-check"></i></div>
+            <h3 class="skill-card-title">Soft Skills</h3>
+          </div>
+          <div class="skill-list">
+            <span class="skill-item"><i class="fa-solid fa-lightbulb"></i> Creative Storytelling</span>
+            <span class="skill-item"><i class="fa-solid fa-eye"></i> Attention to Detail</span>
+            <span class="skill-item"><i class="fa-solid fa-clock"></i> Time Management</span>
+            <span class="skill-item"><i class="fa-solid fa-book-open"></i> Self-Motivated Learner</span>
+            <span class="skill-item"><i class="fa-solid fa-comments"></i> Client Communication</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number reveal" aria-hidden="true">03</span>
+        <p class="section-label reveal">Work History</p>
+        <h2 class="section-title reveal">Experience</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <h3 class="timeline-role">Freelance Video Editor</h3>
+            <span class="timeline-type">Part-Time Commission</span>
+          </div>
+          <p class="timeline-period">Self-Employed · 2023 — Present</p>
+          <ul class="timeline-bullets">
+            <li>Produced and edited school promotional videos, event coverages, and academic presentations using Adobe Premiere Pro and After Effects.</li>
+            <li>Created AI-generated video content using modern AI tools including ChatGPT and Claude for personal and client-based projects.</li>
+            <li>Delivered short-form reels, vlogs, and social media content with professional color grading, audio sync, and visual effects using Photoshop and Lightroom.</li>
+            <li>Designed thumbnails, graphics, and visual assets for video projects using Adobe Photoshop and Canva.</li>
+            <li>Managed full client workflow including communication, project scoping, revisions, and on-time delivery.</li>
+            <li>Utilized GitHub for version tracking and VS Code for basic scripting and automation support in projects.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE STRIP #2 (Reversed)
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-section reverse" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Video Production</span>
+        <span class="marquee-divider">◆</span>
+        <span>Creative Design</span>
+        <span class="marquee-divider">◆</span>
+        <span>Information Technology</span>
+        <span class="marquee-divider">◆</span>
+        <span>Hardware Maintenance</span>
+        <span class="marquee-divider">◆</span>
+        <span>Software Engineering</span>
+        <span class="marquee-divider">◆</span>
+      </div>
+      <div class="marquee-content">
+        <span>Video Production</span>
+        <span class="marquee-divider">◆</span>
+        <span>Creative Design</span>
+        <span class="marquee-divider">◆</span>
+        <span>Information Technology</span>
+        <span class="marquee-divider">◆</span>
+        <span>Hardware Maintenance</span>
+        <span class="marquee-divider">◆</span>
+        <span>Software Engineering</span>
+        <span class="marquee-divider">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number reveal" aria-hidden="true">04</span>
+        <p class="section-label reveal">Selected Works</p>
+        <h2 class="section-title reveal">Portfolio</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── FOLDER 1: School Event Coverage ── -->
+        <div class="folder-card reveal stagger-1" data-folder="folder-1">
+          <div class="folder-thumbnail">
+            <img src="assets/school_event_thumb.jpg" alt="School Event Coverage Videos" loading="lazy" />
+            <div class="folder-overlay">
+              <div class="folder-icon-badge">
+                <svg viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="26">
+                  <path d="M12 2 C18 2 21 4 22 10 C22 20 18 25 12 27 C6 25 2 20 2 10 C3 4 6 2 12 2 Z" />
+                  <path d="M11 8 C8 9 6 11 6 14 C6 17 8 19 10 21 M11 11 C9 12 8 13 8 15 C8 17 9 18 11 19 M11 14 C10 15 9 16 9 17 C9 18 10 18 11 18" />
+                  <path d="M13 8 C16 9 18 11 18 14 C18 17 16 19 14 21 M13 11 C15 12 16 13 16 15 C16 17 15 18 13 19 M13 14 C14 15 15 16 15 17 C15 18 14 18 13 18" fill="currentColor" />
+                </svg>
+              </div>
+              <span class="folder-open-label">Open Folder</span>
+            </div>
+          </div>
+          <div class="folder-info">
+            <p class="folder-category">Event Coverage</p>
+            <h3 class="folder-title">School Event Videos</h3>
+            <p class="folder-desc">Full-length promotional and documentation videos for school activities and events.</p>
+            <div class="folder-meta">
+              <span class="folder-count"><i class="fa-solid fa-film"></i> <span class="video-count">6</span> videos</span>
+              <span class="folder-toggle-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── FOLDER 2: AI-Generated Content ── -->
+        <div class="folder-card reveal stagger-2" data-folder="folder-2">
+          <div class="folder-thumbnail">
+            <img src="assets/ai_video_thumb.jpg" alt="AI-Generated Content Projects" loading="lazy" />
+            <div class="folder-overlay">
+              <div class="folder-icon-badge">
+                <svg viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="26">
+                  <path d="M12 2 C18 2 21 4 22 10 C22 20 18 25 12 27 C6 25 2 20 2 10 C3 4 6 2 12 2 Z" />
+                  <path d="M11 8 C8 9 6 11 6 14 C6 17 8 19 10 21 M11 11 C9 12 8 13 8 15 C8 17 9 18 11 19 M11 14 C10 15 9 16 9 17 C9 18 10 18 11 18" />
+                  <path d="M13 8 C16 9 18 11 18 14 C18 17 16 19 14 21 M13 11 C15 12 16 13 16 15 C16 17 15 18 13 19 M13 14 C14 15 15 16 15 17 C15 18 14 18 13 18" fill="currentColor" />
+                </svg>
+              </div>
+              <span class="folder-open-label">Open Folder</span>
+            </div>
+          </div>
+          <div class="folder-info">
+            <p class="folder-category">AI Content</p>
+            <h3 class="folder-title">AI-Generated Projects</h3>
+            <p class="folder-desc">Creative AI-assisted video content blending generative tools with professional editing.</p>
+            <div class="folder-meta">
+              <span class="folder-count"><i class="fa-solid fa-film"></i> <span class="video-count">2</span> videos</span>
+              <span class="folder-toggle-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── FOLDER 3: Short-Form Reels ── -->
+        <div class="folder-card reveal stagger-3" data-folder="folder-3">
+          <div class="folder-thumbnail">
+            <img src="assets/reels_thumb.jpg" alt="Short-Form Social Media Reels" loading="lazy" />
+            <div class="folder-overlay">
+              <div class="folder-icon-badge">
+                <svg viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="26">
+                  <path d="M12 2 C18 2 21 4 22 10 C22 20 18 25 12 27 C6 25 2 20 2 10 C3 4 6 2 12 2 Z" />
+                  <path d="M11 8 C8 9 6 11 6 14 C6 17 8 19 10 21 M11 11 C9 12 8 13 8 15 C8 17 9 18 11 19 M11 14 C10 15 9 16 9 17 C9 18 10 18 11 18" />
+                  <path d="M13 8 C16 9 18 11 18 14 C18 17 16 19 14 21 M13 11 C15 12 16 13 16 15 C16 17 15 18 13 19 M13 14 C14 15 15 16 15 17 C15 18 14 18 13 18" fill="currentColor" />
+                </svg>
+              </div>
+              <span class="folder-open-label">Open Folder</span>
+            </div>
+          </div>
+          <div class="folder-info">
+            <p class="folder-category">Social Media</p>
+            <h3 class="folder-title">Short-Form Reels</h3>
+            <p class="folder-desc">Engaging reels optimized for social platforms with dynamic editing and audio sync.</p>
+            <div class="folder-meta">
+              <span class="folder-count"><i class="fa-solid fa-film"></i> <span class="video-count">2</span> videos</span>
+              <span class="folder-toggle-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.projects-grid -->
+
+      <!-- Panel 1: School Event Videos -->
+      <div class="folder-panel" id="folder-1">
+        <div class="folder-panel-header">
+          <div class="folder-panel-title-group">
+            <i class="fa-solid fa-folder-open folder-panel-icon"></i>
+            <h3>School Event Videos</h3>
+          </div>
+          <button class="folder-panel-close" aria-label="Close folder">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="folder-video-grid">
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/1DOYxgq8vQHy90TDqQi6OkoJ2u7UCLy1L/preview">
+            <div class="video-thumbnail-placeholder">
+              <img src="https://drive.google.com/thumbnail?id=1DOYxgq8vQHy90TDqQi6OkoJ2u7UCLy1L&sz=w600" alt="Aquintance party 2025 Thumbnail" loading="lazy" />
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Aquintance party 2025</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/17OKN8lFQAXW84m7J526c9R9spiX4bGpe/preview">
+            <div class="video-thumbnail-placeholder">
+              <img src="https://drive.google.com/thumbnail?id=17OKN8lFQAXW84m7J526c9R9spiX4bGpe&sz=w600" alt="Buwan ng Wika 2025 Thumbnail" loading="lazy" />
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Buwan ng Wika 2025 (Final Film)</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/11XdtzEKgzMx84odMCSf7aMEJetHgw3nC/preview">
+            <div class="video-thumbnail-placeholder">
+              <img src="https://drive.google.com/thumbnail?id=11XdtzEKgzMx84odMCSf7aMEJetHgw3nC&sz=w600" alt="Palaro 2025 (Day 5) Thumbnail" loading="lazy" />
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Palaro 2025 (Day 5 Highlights)</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/10OxoGqHs_4f0PIK_gXF-yLMkR5ytWLWc/preview">
+            <div class="video-thumbnail-placeholder">
+              <img src="https://drive.google.com/thumbnail?id=10OxoGqHs_4f0PIK_gXF-yLMkR5ytWLWc&sz=w600" alt="Mentor Day Thumbnail" loading="lazy" />
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Mentor Day (Valentines Day)</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/1mzdfqeEtfgHaGr7JuplLAVuISgeim33h/preview">
+            <div class="video-thumbnail-placeholder">
+              <img src="https://drive.google.com/thumbnail?id=1mzdfqeEtfgHaGr7JuplLAVuISgeim33h&sz=w600" alt="Palaro 2025 Highlights Thumbnail" loading="lazy" />
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Palaro 2025 Highlights</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/1MwPMnTo8ves4gc_utLG7cAcfX9ErBN_r/preview">
+            <div class="video-thumbnail-placeholder">
+              <img src="https://drive.google.com/thumbnail?id=1MwPMnTo8ves4gc_utLG7cAcfX9ErBN_r&sz=w600" alt="Peer Councilor Highlights Thumbnail" loading="lazy" />
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Peer Councilor Highlights</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: AI-Generated Projects -->
+      <div class="folder-panel" id="folder-2">
+        <div class="folder-panel-header">
+          <div class="folder-panel-title-group">
+            <i class="fa-solid fa-folder-open folder-panel-icon"></i>
+            <h3>AI-Generated Projects</h3>
+          </div>
+          <button class="folder-panel-close" aria-label="Close folder">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="folder-video-grid">
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/EXAMPLE_ID_3/preview">
+            <div class="video-thumbnail-placeholder">
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">AI Short Film Concept</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/EXAMPLE_ID_4/preview">
+            <div class="video-thumbnail-placeholder">
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">AI Motion Graphics Demo</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: Short-Form Reels -->
+      <div class="folder-panel" id="folder-3">
+        <div class="folder-panel-header">
+          <div class="folder-panel-title-group">
+            <i class="fa-solid fa-folder-open folder-panel-icon"></i>
+            <h3>Short-Form Reels</h3>
+          </div>
+          <button class="folder-panel-close" aria-label="Close folder">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="folder-video-grid">
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/EXAMPLE_ID_5/preview">
+            <div class="video-thumbnail-placeholder">
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Campus Life Reel</p>
+          </div>
+
+          <div class="video-item" data-video-src="https://drive.google.com/file/d/EXAMPLE_ID_6/preview">
+            <div class="video-thumbnail-placeholder">
+              <div class="play-btn-circle">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <p class="video-label">Event Recap Reel</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EDUCATION SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number reveal" aria-hidden="true">05</span>
+        <p class="section-label reveal">Academic Timeline</p>
+        <h2 class="section-title reveal">Education</h2>
+      </div>
+      <div class="education-grid">
+
+        <!-- College -->
+        <div class="education-card reveal stagger-1">
+          <div class="education-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="education-details">
+            <h3 class="education-degree">BS Information Technology</h3>
+            <p class="education-school">ACLC College of Bukidnon</p>
+            <p class="education-year">2024 — Present</p>
+          </div>
+        </div>
+
+        <!-- Senior High School -->
+        <div class="education-card reveal stagger-2">
+          <div class="education-icon">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="education-details">
+            <h3 class="education-degree">TVL — Computer System Servicing (NC II)</h3>
+            <p class="education-school">Valencia National High School</p>
+            <p class="education-year">2022 — 2024</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number reveal" aria-hidden="true">06</span>
+        <p class="section-label reveal">Get in Touch</p>
+        <h2 class="section-title reveal">Contact</h2>
+      </div>
+
+      <p class="contact-header-text reveal">
+        Let's work together. <br/>Dedicating creative video production and IT support to your projects.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal-left">
+          <a href="mailto:markjoshuabaluran@gmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <span>markjoshuabaluran@gmail.com</span>
+          </a>
+          <a href="tel:+639924864739" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+            <span>09924864739</span>
+          </a>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Google Drive">
+              <i class="fa-brands fa-google-drive"></i>
+            </a>
+            <a href="mailto:markjoshuabaluran@gmail.com" class="contact-link" aria-label="Email">
+              <i class="fa-solid fa-at"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal-right" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Configuration -->
+          <!-- IMPORTANT: Get your free access key at https://web3forms.com and replace the value below -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New Portfolio Message!" />
+          <input type="hidden" name="from_name" value="Portfolio Contact" />
+          
+          <div class="form-group">
+            <input type="text" id="form-name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          
+          <!-- Optional: To prevent spam -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-solid">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">&copy; 2025 Mark Joshua Baluran. All rights reserved.</p>
+        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Lightbox Modal -->
+  <div class="video-lightbox" id="video-lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close video player">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-video-wrapper">
+        <iframe id="lightbox-iframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── JavaScript ─── -->
+  <script src="js/script.js"></script>
+</body>
+</html>
