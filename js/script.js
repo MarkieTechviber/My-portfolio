@@ -385,13 +385,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxClose = document.getElementById('lightbox-close');
 
   if (videoLightbox && lightboxIframe && lightboxClose) {
+    let previousBodyOverflow = '';
+
     videoItems.forEach((item) => {
       item.addEventListener('click', () => {
         const videoSrc = item.getAttribute('data-video-src');
         if (videoSrc) {
+          previousBodyOverflow = document.body.style.overflow;
           lightboxIframe.src = videoSrc;
           videoLightbox.classList.add('active');
           videoLightbox.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
           // Reset custom cursor if needed
           const cursor = document.querySelector('.cursor');
           if (cursor) cursor.classList.remove('hovered');
@@ -403,6 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
       videoLightbox.classList.remove('active');
       videoLightbox.setAttribute('aria-hidden', 'true');
       lightboxIframe.src = '';
+      document.body.style.overflow = previousBodyOverflow;
     };
 
     lightboxClose.addEventListener('click', (e) => {
