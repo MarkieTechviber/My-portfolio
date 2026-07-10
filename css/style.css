@@ -63,6 +63,7 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -1682,7 +1683,7 @@ p {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 75%;
     max-width: 320px;
     height: 100vh;
@@ -1692,12 +1693,13 @@ p {
     align-items: center;
     gap: var(--space-md);
     border-left: 2px solid var(--border-focus);
-    transition: right var(--transition-med);
+    transform: translateX(100%);
+    transition: transform var(--transition-med);
     z-index: 999;
   }
 
   .nav-links.active {
-    right: 0;
+    transform: translateX(0);
   }
 
   .nav-links a {
