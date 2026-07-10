@@ -1308,6 +1308,7 @@ p {
 }
 
 .lightbox-video-wrapper iframe {
+  display: block;
   width: 100%;
   height: 100%;
   border: none;
@@ -1759,6 +1760,11 @@ p {
     aspect-ratio: 16 / 9;
   }
 
+  .video-thumbnail-placeholder img {
+    object-fit: contain;
+    background: #000;
+  }
+
   .play-btn-circle {
     width: 44px;
     height: 44px;
@@ -1785,7 +1791,9 @@ p {
 
   .lightbox-content {
     width: 100%;
+    height: min(calc((100vw - 2rem) * 0.5625), calc(100dvh - 7rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)));
     max-height: calc(100dvh - 7rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    aspect-ratio: auto;
   }
 }
 
